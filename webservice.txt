@@ -23,44 +23,6 @@ The basic web services platform is XML + HTTP. All the standard web services wor
 •	WSDL (Web Services Description Language)
 All these components have been discussed in the Web Services Architecture chapter.
 
-How Does a Web Service Work?
-A web service enables communication among various applications by using open standards such as HTML, XML, WSDL, and SOAP. A web service takes the help of −
-•	XML to tag the data
-•	SOAP to transfer a message
-•	WSDL to describe the availability of service.
-You can build a Java-based web service on Solaris that is accessible from your Visual Basic program that runs on Windows.
-You can also use C# to build new web services on Windows that can be invoked from your web application that is based on JavaServer Pages (JSP) and runs on Linux.
-Example
-Consider a simple account-management and order processing system. The accounting personnel use a client application built with Visual Basic or JSP to create new accounts and enter new customer orders.
-The processing logic for this system is written in Java and resides on a Solaris machine, which also interacts with a database to store information.
-The steps to perform this operation are as follows −
-The client program bundles the account registration information into a SOAP message.
-This SOAP message is sent to the web service as the body of an HTTP POST request.
-The web service unpacks the SOAP request and converts it into a command that the application can understand.
-The application processes the information as required and responds with a new unique account number for that customer.
-Next, the web service packages the response into another SOAP message, which it sends back to the client program in response to its HTTP request.
-The client program unpacks the SOAP message to obtain the results of the account registration process.
-
-Why Web Services?
-Here are the benefits of using Web Services −
-•	Exposing the Existing Function on the network
-A web service is a unit of managed code that can be remotely invoked using HTTP. That is, it can be activated using HTTP requests. Web services allow you to expose the functionality of your existing code over the network. Once it is exposed on the network, other applications can use the functionality of your program.
-•	Interoperability
-Web services allow various applications to talk to each other and share data and services among themselves. Other applications can also use the web services. For example, a VB or .NET application can talk to Java web services and vice versa. Web services are used to make the application platform and technology independent.
-•	Standardized Protocol
-Web services use standardized industry standard protocol for the communication. All the four layers (Service Transport, XML Messaging, Service Description, and Service Discovery layers) use well-defined protocols in the web services protocol stack. This standardization of protocol stack gives the business many advantages such as a wide range of choices, reduction in the cost due to competition, and increase in the quality.
-•	Low Cost Communication
-Web services use SOAP over HTTP protocol, so you can use your existing low-cost internet for implementing web services. This solution is much less costly compared to proprietary solutions like EDI/B2B. Besides SOAP over HTTP, web services can also be implemented on other reliable transport mechanisms like FTP.
-
-Web Services - Characteristics
-Web services have the following special behavioral characteristics −
-•	XML-Based
-Web services use XML at data representation and data transportation layers. Using XML eliminates any networking, operating system, or platform binding. Web services based applications are highly interoperable at their core level.
-•	Loosely Coupled
-A consumer of a web service is not tied to that web service directly. The web service interface can change over time without compromising the client's ability to interact with the service. A tightly coupled system implies that the client and server logic are closely tied to one another, implying that if one interface changes, the other must be updated. Adopting a loosely coupled architecture tends to make software systems more manageable and allows simpler integration between different systems.
-•	Coarse-Grained
-Object-oriented technologies such as Java expose their services through individual methods. An individual method is too fine an operation to provide any useful capability at a corporate level. Building a Java program from scratch requires the creation of several fine-grained methods that are then composed into a coarse-grained service that is consumed by either a client or another service.
-Businesses and the interfaces that they expose should be coarse-grained. Web services technology provides a natural way of defining coarse-grained services that access the right amount of business logic.
 
 •	Ability to be Synchronous or Asynchronous
 Synchronicity refers to the binding of the client to the execution of the service. In synchronous invocations, the client blocks and waits for the service to complete its operation before continuing. Asynchronous operations allow a client to invoke a service and then execute other functions.
@@ -83,6 +45,7 @@ The first is to examine the individual roles of each web service actor.
 The second is to examine the emerging web service protocol stack.
 Web Service Roles
 There are three major roles within the web service architecture −
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
 
 •	Service Provider
 This is the provider of the web service. The service provider implements the service and makes it available on the Internet.
